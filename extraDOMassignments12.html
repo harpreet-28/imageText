@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+    h1 {
+        position: absolute;
+        top: 120px;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="image" src="flower.jpg">
+    </div>
+    <h1 id="para" hidden>Flowers</h1>
+    <script type="text/javascript">
+    var _id = function _id(id) {
+        return document.getElementById(id);
+    }
+    var container = _id('container');
+    var image = _id('image');
+    var para = _id('para');
+    function show() {
+        para.hidden = false;
+    }
+    container['addEventListener']('mouseover', show, false);
+    </script>
+</body>
+
+</html>
